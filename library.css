@@ -28,3 +28,16 @@ form .inputs{
     flex-direction: column;
     align-items: center;
 }
+
+.lib-section {
+    margin-top: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 5px;
+}
+
+.card{
+    padding:1.5em;
+    border-radius: 5px;
+    background-color: white;
+}

@@ -29,5 +29,43 @@ addBookToLibrary(book);
 
 function addBookToLibrary(book) {
     myLibrary.push(book);
+
+    //After pushing books to the library
+    displayBooks();
+    clearFields();
 };
 
+function displayBooks() {
+    myLibrary.forEach(book => {
+        createCard(book)
+    });
+};
+
+function clearFields() {
+    document.querySelector('#title').value = ' ';
+    document.querySelector('#author').value = ' ';
+    document.querySelector('#pages').value = ' ';
+}
+
+function createCard(book) {
+    const card = document.querySelector('.card');
+    const cardContent = document.createElement('div');
+
+    if (book.status == 'Read') {
+        cardContent.textContent = `
+        ${book.title}
+        ${book.author}
+        ${book.pages}
+        Read
+        ${book.id}`
+    } else {
+        cardContent.textContent = `
+        ${book.title}
+        ${book.author}
+        ${book.pages}
+        Not Read
+        ${book.id}`
+    }
+
+    card.appendChild(cardContent);
+} 
