@@ -1,0 +1,30 @@
+html{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    border: solid 1px gray;
+    padding: 0.5em;
+    height: 40vh;
+    width: 25vw;
+    border-radius: 5px;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+form .inputs{
+    width: 90%;
+    margin-bottom: 0.75em;
+}
+
+.input-section{
+    width: 70vw;
+    border-bottom: solid 0.8px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
