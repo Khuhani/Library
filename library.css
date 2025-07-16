@@ -16,6 +16,10 @@ form{
     margin-bottom: 2em;
 }
 
+form:hover{
+    box-shadow: 5px 5px 15px #888888;
+}
+
 form .inputs{
     width: 90%;
     margin-bottom: 0.75em;
@@ -29,6 +33,20 @@ form .inputs{
     align-items: center;
 }
 
+.submit-btn{
+    width: 95%;
+    margin-bottom: 0.75em;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
 .lib-section {
     margin-top: 2.5em;
     display: grid;
@@ -40,4 +58,29 @@ form .inputs{
     padding:1.5em;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0 2px 5px gray;
+    position: relative;
+}
+
+.card h3{
+    margin: 0 0 10px;
+    color: rgb(0, 0, 39);
+}
+
+.card p{
+    margin: 5px 0;
+    color: black;
+}
+
+.delete-btn{
+    padding:5px;
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: black;
+    color:aliceblue;
+}
+
+.delete-btn:hover{
+    background-color: #888888;
+    cursor: pointer;
 }
